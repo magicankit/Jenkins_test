@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.infogain</groupId>
+  <artifactId>Week1_Assignment</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Week1_Assignment</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-core</artifactId>
+    		<version>5.2.9.Final</version>
+		</dependency>
+  </dependencies>
+  
+  <mailingLists>
+    <mailingList>
+	<name> Project users</name>
+      	<post>announce@infogain.com</post>
+      	<subscribe>users-subscribe@infogain.com</subscribe>
+	<unsubscribe>users-subscribe@infogain.com</unsubscribe>
+      <archive>http://infogain.archive.org</archive>
+     </mailingList>
+
+</mailingLists>
+
+<licenses>
+	<license>
+		<name> Archive License 2.0 </name>
+		<url> http://www.apache.org/licenses/LICENSE-2.0txt </url>
+		<distribution>repo</distribution>
+</license>
+	</licenses>
+	
+	<organization>
+			<name> Infogain India Pvt Ltd </name>
+		<url> http://www.infogain.org </url>
+		</organization>
+		
+
+<developers>
+	<developer>
+		<id>java</id>
+			<name> Ankit Arora </name>
+			<organization>Infogain</organization>
+		<url> http://www.infogain.org </url>
+		<roles>
+		<role>java</role>
+		</roles>
+		
+		</developer>
+		
+		</developers>
+		
+		<contributors>
+  <contributor>
+  <name>Jack Smith</name>
+  <roles>
+  <role>developer</role>
+  </roles>
+  </contributor>
+  </contributors>
+  
+  
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      </plugins>
+      </build>
+</project>
